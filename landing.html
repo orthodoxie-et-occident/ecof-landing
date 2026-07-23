@@ -1,0 +1,240 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECOF</title>
+    <!-- Favicon -->
+    <link rel="icon" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+      }
+
+      body {
+        font-family: Inter, sans-serif;
+        background-image: radial-gradient(circle, #b3995b, #bca367, #c5ad72, #cfb87e, #d8c28a);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        background-attachment: fixed;
+      }
+
+      .hero {
+        width: 100%;
+
+        /* Hauteur de l'écran */
+        height: 100vh;
+
+        /* Hauteur réelle sur les navigateurs mobiles */
+        height: 100dvh;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        /* Petit espace sur les côtés */
+        padding: 20px;
+
+        /* Empêche tout débordement */
+        overflow: hidden;
+      }
+
+      /* =========================
+       CONTENU
+    ========================= */
+
+      .content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        width: 100%;
+
+        max-width: 600px;
+
+        /* Espace entre l'image et les stores */
+        gap: 25px;
+      }
+
+      /* =========================
+       IMAGE ECOF
+    ========================= */
+
+      .main-image {
+        display: block;
+
+        width: auto;
+
+        height: auto;
+
+        /* Ne dépasse jamais la largeur de l'écran */
+        max-width: 90vw;
+
+        /* Ne dépasse jamais 65% de la hauteur */
+        max-height: 65vh;
+
+        object-fit: contain;
+      }
+
+      /* =========================
+       STORE BUTTONS
+    ========================= */
+
+      .stores {
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        width: 100%;
+      }
+
+      .stores a {
+        display: inline-block;
+
+        line-height: 0;
+      }
+
+      .stores img {
+        display: block;
+
+        height: 48px;
+
+        width: auto;
+
+        transition: 0.25s;
+
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
+      }
+
+      /* =========================
+       EFFET HOVER
+    ========================= */
+
+      .stores img:hover {
+        transform: translateY(-4px) scale(1.03);
+
+        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.45))
+          drop-shadow(0 0 10px rgba(179, 153, 90, 0.55));
+      }
+
+      /* =========================
+       LINKS
+    ========================= */
+
+      a {
+        text-decoration: none;
+      }
+
+      /* =========================
+       MOBILE
+    ========================= */
+
+      @media (max-width: 700px) {
+        body {
+          background-attachment: scroll;
+        }
+
+        .hero {
+          /* Utilise toute la hauteur disponible */
+          height: 100vh;
+          height: 100dvh;
+
+          padding: 20px 15px;
+        }
+
+        .content {
+          gap: 20px;
+        }
+
+        .main-image {
+          /* L'image s'adapte aux petits écrans */
+          max-width: 90vw;
+
+          /* Laisse suffisamment de place aux boutons */
+          max-height: 60vh;
+        }
+
+        .stores {
+          gap: 10px;
+        }
+
+        .stores img {
+          height: 40px;
+        }
+      }
+
+      /* =========================
+       TRÈS PETITS ÉCRANS
+    ========================= */
+
+      @media (max-height: 600px) {
+        .hero {
+          padding: 10px 15px;
+        }
+
+        .content {
+          gap: 15px;
+        }
+
+        .main-image {
+          max-height: 55vh;
+        }
+
+        .stores img {
+          height: 36px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hero">
+      <div class="content">
+        <img src="ecof.png" alt="ECOF" class="main-image" />
+        <div class="stores">
+          <a
+            href="https://apps.apple.com/fr/app/ecof/id6762153654"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="appstore-fr.svg" alt="Télécharger l'application ECOF sur l'App Store" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=app.ecof.www"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="googleplay-fr.svg" alt="Télécharger l'application ECOF sur Google Play" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "ecof-landing",
+  "private": true,
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "fmt": "bun oxfmt"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "oxfmt": "^0.60.0"
+  }
+}
