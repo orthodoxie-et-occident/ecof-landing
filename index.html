@@ -44,6 +44,8 @@
 
         display: flex;
 
+        flex-direction: column;
+
         justify-content: center;
 
         align-items: center;
@@ -53,6 +55,8 @@
 
         /* Empêche tout débordement */
         overflow: hidden;
+
+        position: relative;
       }
 
       .content {
@@ -70,6 +74,8 @@
 
         /* Espace entre l'image et les stores */
         gap: 25px;
+
+        flex: 1;
       }
 
       .main-image {
@@ -131,6 +137,42 @@
         text-decoration: none;
       }
 
+      .footer {
+        width: 100%;
+
+        max-width: 600px;
+
+        text-align: center;
+
+        padding: 14px 15px 0 15px;
+
+        margin-top: 4px;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+        font-size: 11px;
+
+        letter-spacing: 0.3px;
+
+        color: rgba(74, 58, 26, 0.75);
+      }
+
+      .footer a {
+        color: rgba(74, 58, 26, 0.9);
+
+        text-decoration: none;
+
+        border-bottom: 1px solid rgba(74, 58, 26, 0.35);
+
+        transition: 0.25s;
+      }
+
+      .footer a:hover {
+        color: #3d2f14;
+
+        border-bottom-color: rgba(74, 58, 26, 0.8);
+      }
+
       @media (max-width: 700px) {
         body {
           background-attachment: scroll;
@@ -163,6 +205,12 @@
         .stores img {
           height: 40px;
         }
+
+        .footer {
+          font-size: 10px;
+
+          padding-top: 10px;
+        }
       }
 
       @media (max-height: 600px) {
@@ -180,6 +228,12 @@
 
         .stores img {
           height: 36px;
+        }
+
+        .footer {
+          font-size: 9px;
+
+          padding-top: 8px;
         }
       }
     </style>
@@ -206,6 +260,17 @@
           </a>
         </div>
       </div>
+
+      <footer class="footer">
+        Copyright ©
+        <a
+          href="https://eglise-catholique-orthodoxe-de-france.fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Eglise catholique orthodoxe de France</a
+        >
+        - Tous droits réservés.
+      </footer>
     </section>
   </body>
 </html>
