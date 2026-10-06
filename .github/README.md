@@ -6,8 +6,6 @@
   Static website for the <a href="https://ecof.app">Eglise Catholique Orthodoxe de France</a> mobile application.
 </p>
 
----
-
 ## 📄 Pages
 
 | Path       | Description                                                |
