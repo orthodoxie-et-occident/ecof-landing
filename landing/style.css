@@ -78,8 +78,7 @@ body {
 @media (hover: hover) and (pointer: fine) {
   .stores img:hover {
     transform: translateY(-4px) scale(1.03);
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.45))
-      drop-shadow(0 0 10px rgba(179, 153, 90, 0.55));
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.45)) drop-shadow(0 0 10px rgba(179, 153, 90, 0.55));
   }
 }
 
